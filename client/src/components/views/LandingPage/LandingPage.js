@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { withRouter } from "react-router-dom";
 
 function LandingPage(props) {
   const [greeting, setGreeting] = useState("");
@@ -46,4 +47,4 @@ function LandingPage(props) {
   );
 }
 
-export default LandingPage;
+export default withRouter(LandingPage);
